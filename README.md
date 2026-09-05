@@ -84,33 +84,6 @@ qemu-system-x86_64 -m 32 -drive file=aurora.img,format=raw,if=floppy -boot a
 
 ## 图形模式
 qemu-system-x86_64 -m 64 -vga std -drive file=aurora.img,format=raw,if=floppy -boot a
-## 📂 项目结构
-text
-AuroraOS/
-├── boot/                  # 引导加载器
-│   ├── boot.asm          # 引导扇区
-│   ├── loader.asm        # 内核加载器
-│   ├── gdt.inc           # GDT 表
-│   └── interrupt.asm     # 中断入口
-├── kernel/                # 内核
-│   ├── src/              # 源码目录
-│   │   ├── main.c        # 内核入口
-│   │   ├── terminal.c    # 终端驱动
-│   │   ├── shell.c       # Shell 解释器
-│   │   ├── commands.c    # 内置命令
-│   │   ├── fs.c          # 文件系统
-│   │   ├── keyboard.c    # 键盘驱动
-│   │   ├── idt.c         # 中断管理
-│   │   ├── pic.c         # PIC 控制器
-│   │   ├── graphics/     # 图形驱动
-│   │   ├── gui/          # GUI 框架
-│   │   └── font/         # 中文字库
-│   └── linker.ld         # 链接脚本
-├── resources/             # 资源文件
-│   └── hzk16.bin         # 中文字库
-├── aurora.img             # 系统镜像
-├── LICENSE
-└── README.md
 ## 📄 许可证
 本项目采用 MIT 许可证，详情见 LICENSE 文件。
 
