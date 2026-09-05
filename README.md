@@ -65,11 +65,9 @@ Aurora OS 是一个从零开始、手把手构建的 x86 架构操作系统。�
 
 ## 🚀 快速开始
 
-### 1. 克隆仓库
-```bash
-git clone https://github.com/你的用户名/AuroraOS.git
-cd AuroraOS
-2. 安装依赖
+## 如何使用？
+1.克隆仓库（大家应该都会叭）
+##2. 安装依赖
 NASM：nasm.us
 
 i686-elf-gcc：lordmilko/i686-elf-tools
@@ -81,12 +79,12 @@ powershell
 .\boot\build.ps1
 4. 运行系统
 powershell
-# 文本模式
+## 文本模式
 qemu-system-x86_64 -m 32 -drive file=aurora.img,format=raw,if=floppy -boot a
 
-# 图形模式
+## 图形模式
 qemu-system-x86_64 -m 64 -vga std -drive file=aurora.img,format=raw,if=floppy -boot a
-# 📂 项目结构
+## 📂 项目结构
 text
 AuroraOS/
 ├── boot/                  # 引导加载器
@@ -113,10 +111,10 @@ AuroraOS/
 ├── aurora.img             # 系统镜像
 ├── LICENSE
 └── README.md
-# 📄 许可证
+## 📄 许可证
 本项目采用 MIT 许可证，详情见 LICENSE 文件。
 
-# 🙏 致谢
+## 🙏 致谢
 《30天自制操作系统》（川合秀实）
 
 OSDev Wiki
