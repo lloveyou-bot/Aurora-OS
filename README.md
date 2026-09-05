@@ -67,7 +67,7 @@ Aurora OS 是一个从零开始、手把手构建的 x86 架构操作系统。�
 
 ## 如何使用？
 1.克隆仓库（大家应该都会叭）
-##2. 安装依赖
+2. 安装依赖
 NASM：nasm.us
 
 i686-elf-gcc：lordmilko/i686-elf-tools
